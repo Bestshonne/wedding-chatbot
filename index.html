@@ -13,18 +13,36 @@
       justify-content: center;
       align-items: center;
     }
+    .chat-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
     iframe {
       width: 100%;
       height: 100%;
       min-height: 700px;
       border: none;
     }
+    /* Overlay to hide branding */
+    .overlay {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 150px;
+      height: 50px;
+      background: white; /* match your page background */
+      z-index: 10;
+    }
   </style>
 </head>
 <body>
-  <iframe
-    src="https://udify.app/chatbot/P340ZTDumPzda0Js"
-    allow="microphone">
-  </iframe>
+  <div class="chat-container">
+    <iframe
+      src="https://udify.app/chatbot/P340ZTDumPzda0Js"
+      allow="microphone">
+    </iframe>
+    <div class="overlay"></div>
+  </div>
 </body>
 </html>
