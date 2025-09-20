@@ -4,25 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JAKE wedding assistant</title>
+
+  <!-- Favicon -->
   <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1077/1077035.png" type="image/png">
+
+  <!-- Meta Tags for SEO & Social Sharing -->
+  <meta name="description" content="JAKE Wedding Assistant — your personal chatbot to help with wedding details, schedule, and guest information.">
+  <meta name="author" content="JAKE Wedding Assistant">
+
+  <!-- Open Graph (Facebook, Line, LinkedIn) -->
+  <meta property="og:title" content="JAKE Wedding Assistant">
+  <meta property="og:description" content="Chat with JAKE’s Wedding Assistant for event info, schedule, and more.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bestshonne.github.io/wedding-chatbot/">
+  <meta property="og:image" content="https://cdn-icons-png.flaticon.com/512/1077/1077035.png">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="JAKE Wedding Assistant">
+  <meta name="twitter:description" content="Your wedding chatbot assistant.">
+  <meta name="twitter:image" content="https://cdn-icons-png.flaticon.com/512/1077/1077035.png">
+
   <style>
-    body {
+    html, body {
       margin: 0;
       padding: 0;
       height: 100%;
       width: 100%;
-      font-family: 'Playfair Display', serif;
-      background: linear-gradient(135deg, #fff5f8, #ffe6eb);
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      overflow: hidden; /* ปิดการ scroll ของ body */
     }
     iframe {
-      width: 90vw;
-      height: 90vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
       border: none;
-      border-radius: 20px;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.2);
     }
   </style>
 </head>
